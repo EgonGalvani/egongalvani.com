@@ -1,8 +1,13 @@
+import { Container } from "@mui/material";
 import React from "react";
-import "./App.css";
+import Intro from "./Intro/Intro";
 
 function App() {
-  return <div className="App">Ciao</div>;
+  return (
+    <Container maxWidth={false} disableGutters>
+      <Intro />
+    </Container>
+  );
 }
 
 export default App;
