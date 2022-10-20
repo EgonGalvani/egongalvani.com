@@ -1,7 +1,7 @@
 import { Container } from "@mui/material";
-import React from "react";
-import Awards from "./Intro/Awards";
+import React, { lazy } from "react";
 import Intro from "./Intro/Intro";
+import Awards from "./Awards/Awards";
 
 function App() {
   return (
