@@ -1,25 +1,21 @@
 import React from "react";
-import { Grid, Box, Typography } from "@mui/material";
-import Typed from "../common/Typed";
+import Typed from "../common/Typed/Typed";
 
 const Awards = () => {
   return (
-    <Box sx={{ flexGrow: 1 }}>
-      <Grid
-        container
-        spacing={2}
-        sx={{ height: "100vh", alignItems: "center" }}
-      >
-        <Grid item xs={12} md={6}>
-          <Typed text="Maecenas sodales augue libero" />
-        </Grid>
-        <Grid
-          item
-          xs={6}
-          sx={{ overflow: "hidden", display: { xs: "none", md: "block" } }}
-        ></Grid>
-      </Grid>
-    </Box>
+    <div
+      className="flex flex-row h-full"
+      // sx={{ height: "100vh", alignItems: "center" }}
+    >
+      <div className="flex items-center justify-center flex-1">
+        <p className="text-center p-10 text-3xl">
+          <Typed text="Ciao Mondo" />
+        </p>
+      </div>
+      <div className="items-center justify-center hidden md:flex md:flex-1">
+        <p className="text-center p-10 text-3xl">World</p>
+      </div>
+    </div>
   );
 };
 

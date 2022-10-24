@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Typography } from "@mui/material";
-import { keyframes, TypographyProps } from "@mui/system";
+import "./Typed.css";
 
 type TypedProps = {
   text: string;
@@ -9,16 +8,7 @@ type TypedProps = {
 };
 const DEFAULT_TYPE_SPEED = 100;
 
-const blink = keyframes`
-  0%{opacity: 0;}
-  100%{opacity: 1;}
-}`;
-
-const Typed: React.FC<TypedProps & TypographyProps> = ({
-  text,
-  speed,
-  ...typoProps
-}) => {
+const Typed: React.FC<TypedProps> = ({ text, speed }) => {
   const [content, setContent] = useState("");
 
   useEffect(() => {
@@ -34,19 +24,7 @@ const Typed: React.FC<TypedProps & TypographyProps> = ({
     return () => clearInterval(interval);
   }, [text, content, speed]);
 
-  return (
-    <Typography
-      {...typoProps}
-      sx={{
-        "&:after": {
-          content: '"|"',
-          animation: `${blink} 500ms linear infinite alternate`,
-        },
-      }}
-    >
-      {content}
-    </Typography>
-  );
+  return <label className="typed">{content}</label>;
 };
 
 export default Typed;
