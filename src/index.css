@@ -11,3 +11,16 @@ html, body, #root {
   height: 100%; 
   width: 100%;
 } 
+
+#fp-nav ul li a.active span,
+#fp-nav ul li a span,
+.fp-slidesNav ul li a.active span,
+.fp-slidesNav ul li a span {
+  background-color: #000 !important;
+}
+
+.fp-slidesNav, #fp-nav {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: .25rem; 
+}
+

@@ -32,7 +32,7 @@ const Intro = () => {
             &nbsp;to start my working career.
           </p>
         </div>
-        <div className="items-center justify-end hidden md:flex md:flex-1 h-full">
+        <div className="items-center justify-end hidden md:flex md:flex-1">
           <img src="/assets/photo.png" alt="profile" />
         </div>
       </div>
