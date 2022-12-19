@@ -12,7 +12,7 @@ type HighlightedTypoProps = {
 };
 
 const bgHeights = new Map<HighlightMode, string>([
-  ["full", "50%"],
+  ["full", "80%"],
   ["center", "20%"],
   ["high", "40%"],
   ["low", "40%"],
