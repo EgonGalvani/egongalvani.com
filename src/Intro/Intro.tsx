@@ -1,8 +1,6 @@
 import React from "react";
 import HighlightedTypo from "../common/HighlightedTypo/HighlightedTypo";
 
-import "./Intro.css";
-
 const Intro = () => {
   return (
     <div className="section">
@@ -32,8 +30,11 @@ const Intro = () => {
             &nbsp;to start my working career.
           </p>
         </div>
-        <div className="items-center justify-end hidden md:flex md:flex-1">
-          <img src="/assets/photo.png" alt="profile" />
+        <div
+          id="Intro-profile"
+          className="items-center justify-end hidden md:flex md:flex-1"
+        >
+          <img src="/assets/photo.png" className="max-h-screen" alt="profile" />
         </div>
       </div>
     </div>
